@@ -88,7 +88,7 @@ async function main() {
     const availableCommands = (await getCommands(argv.cli.name, argv.cli.exe, helpOutput)).flat(Infinity);
 
     const content = [
-      ...buildHeader(argv.cli.name, argv.description, argv.npm_registry_namespace),
+      // ...buildHeader(argv.cli.name, argv.description, argv.npm_registry_namespace),
       ...buildUsage(argv.cli.name, helpOutput),
       ...buildAvailableCommands(argv.cli.name, availableCommands),
       ...buildLicense(argv.license),
